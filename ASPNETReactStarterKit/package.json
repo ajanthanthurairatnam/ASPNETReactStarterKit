@@ -1,0 +1,35 @@
+{
+  "name": "ASPNETReactStarterKit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm run watch && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch & webpack-dev-server --open",
+    "start": "webpack-dev-server --progress --colors",
+    "build": "webpack",
+    "watch": "webpack -w",
+    "wbp": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.5",
+    "@material-ui/icons": "^4.9.1",
+    "@types/material-ui": "^0.21.7",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

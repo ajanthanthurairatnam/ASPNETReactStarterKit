@@ -8,7 +8,8 @@ export interface HelloProps {
 
 export const Hello = (props: HelloProps) => (
   <h1>
-   Configure Hello {props.compiler} and {props.framework}!
+    Hello World <br />
+    compiler: {props.compiler} framework: {props.framework}!
     <Button variant="contained" color="primary">
       Hello World
     </Button>

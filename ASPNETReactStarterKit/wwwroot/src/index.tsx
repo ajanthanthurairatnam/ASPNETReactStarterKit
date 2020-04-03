@@ -5,10 +5,10 @@ import { Hello } from "./components/Hello";
 
 export function BindDynamicComponent(component:JSX.Element,html:HTMLElement)
 {
-
+ 
   return ReactDOM.render(
     <div>
-          <component />
+        {component}
     </div>
    ,
    html

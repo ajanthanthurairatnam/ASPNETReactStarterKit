@@ -1,8 +1,18 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    var isLoggedIn = Context.Request.Cookies.ContainsKey(".AspNetCore.Identity.Application");
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<body>
+    <h1>This is the entry page.</h1>
+    <div id="fillthis"></div>
+
+
+    <script type="text/javascript">
+        window.onload = function(){
+            myLibrary.BindDynamicComponent(
+                myLibrary.Hello({compiler:'The Compiler',framework:'Framework for react'}),
+                document.getElementById("fillthis"));
+        };
+    </script>
+</body>
